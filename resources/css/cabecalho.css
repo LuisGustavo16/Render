@@ -99,6 +99,7 @@ div.subopcoes.um {
     top: 15.4rem;
     left: 0%;
     border-top: 0;
+    z-index: 1;
 }
 
 div.subopcoes.dois {
@@ -112,6 +113,7 @@ div.subopcoes.dois {
     border-top: 0;
     top: 15.4rem;
     left: 30%;
+    z-index: 1;
 }
 
 div.subopcoes.tres {

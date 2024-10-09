@@ -77,6 +77,7 @@ Route::get('/treino_amistosos/selecionado/{idTreino}/{idModalidade}', [App\Http\
 Route::post('/treino_amistosos/atualizar/{idTreino}', [App\Http\Controllers\controllerTreinoAmistoso::class, 'update']); // Rota para editar
 Route::get('/treino_amistosos/editar/{idTreino}', [App\Http\Controllers\controllerTreinoAmistoso::class, 'edit']); // Rota que manda o dado a ser editado para o formulário
 Route::get('/treino_amistosos/apagar/{idTreino}', [App\Http\Controllers\controllerTreinoAmistoso::class, 'destroy']); // Rota para apagar
+Route::post('/treino_amistosos/apagar/', [App\Http\Controllers\controllerTreinoAmistoso::class, 'destroyMany']); // Rota para apagar
 Route::get ('/treino_amistosos', [App\Http\Controllers\controllerTreinoAmistoso::class, 'enviaModalidade'])->name('enviaModalidadesCadastro'); // Rota que envia as modalidades para usar de opcao
 
 ////////////////////////////////////////////////

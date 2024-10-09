@@ -66,6 +66,19 @@ class controllerTreinoAmistoso extends Controller
         }
     }
 
+    public function destroyMany (Request $request) { 
+        if (is_array($request['treino'])) { 
+            $dados = $request['treino'];
+            for ($i = 0; $i < count($dados); $i++) {
+                $item = TreinoAmistoso::find($dados[$i]);
+                $item->delete();
+            }
+            return redirect()->route('indexTreino')->with('success','Treinos apagados com sucesso!');
+        } else {
+            return redirect()->route('indexTreino')->with('danger','Selecione pelo menos 1 treino.');
+        }
+    }
+
     /*Envia os dados para serem editados*/
     public function edit(string $idTreino) {
         $dados = TreinoAmistoso::find($idTreino);

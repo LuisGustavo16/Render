@@ -4,6 +4,11 @@
     --blue: #00198E;
     --yellow: #FFDF2B;
     --orange: #FFC24B;
+    --yellowSecondary: #FFF1A8;
+    --bottonAccept: #A2F294;
+    --bottonAcceptSecondary: #4F9552;
+    --bottonRecuse: #F87D7D;
+    --bottonRecuseSecondary: #AC3C3C;
 }
 
 /*AJUSTES GERAIS*/
@@ -120,6 +125,51 @@ button.botao {
 }
 
 button.botao:hover {
+    box-shadow: 0.1rem 0.1rem 1rem black;
+    font-weight: 700;
+}
+
+/*Formulário de deletar vários itens*/
+.formDestroyMany {
+    border-radius: 0rem;
+    box-shadow: 0rem 0rem 0rem black;
+    margin: 0rem;
+    margin-top: 3rem;
+    padding: 0rem;
+    padding-top: 0rem;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    border: 0rem;
+}
+
+.divFormDestroyMany {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.botaoDestroyMany {
+    height: 5rem;
+    width: 10rem;
+    border-radius: 2rem;
+    background-color: var(--blue);
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+    border: 0;
+    cursor: pointer;
+}
+
+.divBotao {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+button.botaoDestroyMany:hover {
+    background-color: var(--bottonRecuseSecondary);
     box-shadow: 0.1rem 0.1rem 1rem black;
     font-weight: 700;
 }

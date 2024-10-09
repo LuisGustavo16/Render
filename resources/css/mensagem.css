@@ -1,0 +1,68 @@
+:root {
+    /*Cores do Site*/
+    --white: #E6E8F4;
+    --blue: #00198E;
+    --yellow: #FFDF2B;
+    --orange: #FFC24B;
+    --yellowSecondary: #FFF1A8;
+    --bottonAccept: #A2F294;
+    --bottonAcceptSecondary: #4F9552;
+    --bottonRecuse: #F87D7D;
+    --bottonRecuseSecondary: #AC3C3C;
+}
+
+.divDanger {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    border-top: 0rem;
+    border-left: 0rem;
+    top: 16.5rem;
+    border: solid 1px black;
+    z-index: 0;
+    height: 4rem;
+    width: 27rem;
+    background-color: rgb(255, 199, 199);
+}
+
+.divSuccess {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    border-top: 0rem;
+    border-left: 0rem;
+    top: 16.5rem;
+    border: solid 1px black;
+    z-index: 0;
+    height: 4rem;
+    width: 27rem;
+    background-color: rgb(209, 255, 198);
+}
+
+.divDanger h2 {
+    cursor: pointer;
+    display: block;
+    padding-left: 20px;
+    font-size: 1.3rem;
+    font-family: "Inter", sans-serif;
+}
+
+.divSuccess h2 {
+    cursor: pointer;
+    display: block;
+    padding-left: 20px;
+    font-size: 1.3rem;
+    font-family: "Inter", sans-serif;
+}
+
+.XSaida {
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+    padding-left: 2rem;
+    padding-right: 0.4rem;
+}
