@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "resources/css/app.css": {
     "file": "assets/app-B_SY1GJM.css",
     "src": "resources/css/app.css",
@@ -14,3 +15,16 @@
     ]
   }
 }
+=======
+    "resources/js/app.js": {
+      "file": "assets/app.d426e523.js",
+      "src": "resources/js/app.js",
+      "isEntry": true
+    },
+    "resources/css/app.css": {
+      "file": "assets/app.df49ddcb.css",
+      "src": "resources/css/app.css",
+      "isEntry": true
+    }
+  }
+>>>>>>> 527816d41cd640a9cf5e6262f734b23d2e08f90f
