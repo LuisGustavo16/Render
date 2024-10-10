@@ -127,6 +127,7 @@ div.subopcoes.tres {
     top: 15.4rem;
     border-top: 0;
     left: 55%;
+    z-index: 1;
 }
 
 div.subopcoes.quatro {
@@ -140,6 +141,7 @@ div.subopcoes.quatro {
     top: 15.4rem;
     border-top: 0;
     left: 75%;
+    z-index: 1;
 }
 
 div.laranja {

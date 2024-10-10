@@ -11,7 +11,10 @@
         <div class="campoListarTreinoEscolhido observacao"><h1>Finalidade:</h1> <h2>{{$dados->finalidade}}</h2></div>
     </div>
     <div class="centralizarBotoes ">
-        <a class="recusar" href="/reservas/apagar/{{$dados->idSolicitacaoReserva}}">Excluir</a>
+        @if ($dados->status == 'P')
+            <a class="recusar" href="/reservas/aceitarNegar/{{$dados->idReserva}}/N">Excluir</a>
+            <a class="aceitar" href="/reservas/aceitarNegar/{{$dados->idReserva}}/A">Aceitar</a>
+        @endif
     </div>
     </div>
     

@@ -30,7 +30,7 @@
                             <td>{{$item->dia}}</td>
                             <td>{{$item->horarioInicio}} - {{$item->horarioFim}}</td>
                             <td>{{$item->local}}</td>
-                            <td><a href="../reservas/selecionadoReserva/{{$item->idReserva}}">Ver</a></td>
+                            <td><a href="../../../reservas/reservaSelecionada/{{$item->idReserva}}">Ver</a></td>
                         </tr>
                 @endforeach
             </tbody>

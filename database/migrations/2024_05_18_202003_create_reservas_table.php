@@ -19,6 +19,9 @@ return new class extends Migration
             $table->time('horarioInicio');
             $table->time('horarioFim');
             $table->string('finalidade');
+            $table->string('status');
+            $table->string('tipo');
+            $table->integer('numeroPessoas');
             $table->timestamps();
         });
 

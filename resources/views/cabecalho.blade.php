@@ -61,10 +61,10 @@
                     </div>
 
                     <div class="subopcoesHamburguer subopcaoDois">
-                        <a class="titulo" href="{{route("indexReserva")}}">
+                        <a class="titulo" href="/reservas/listarReservas/A">
                             <h4>Ver reservas</h4>
                         </a>
-                        <a class="titulo" href="{{route("indexSolicitacao")}}">
+                        <a class="titulo" href="/reservas/listarReservas/P">
                             <h4>Ver solicitações de reservas</h4>
                         </a>
                     </div>
@@ -108,10 +108,10 @@
 
         <div class="subopcoes dois">
             <div class="laranja"></div>
-            <a class="titulo" href="{{route("indexReserva")}}">
+            <a class="titulo" href="/reservas/listarReservas/A">
                 <h3>Ver reservas</h3>
             </a>
-            <a class="titulo" href="{{route("indexSolicitacao")}}">
+            <a class="titulo" href="/reservas/listarReservas/P">
                 <h3>Ver solicitações de reservas</h3>
             </a>
         </div>
