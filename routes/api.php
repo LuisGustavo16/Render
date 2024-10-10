@@ -3,8 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\AuthController;
-use App\Http\Controllers\API\TreinoAmistosoController;
-use App\Http\Controllers\API\ModalidadeController;
+use App\Http\Controllers\API\ReservasController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,9 +18,6 @@ use App\Http\Controllers\API\ModalidadeController;
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 
-/*Controller dos Treinos e Amistosos*/
-Route::get ('/treino_amistosos/listarTreinos', [TreinoAmistosoController::class, 'index']); // Rota para exibir
-Route::post('/treino_amistosos/cadastrarTreino', [TreinoAmistosoController::class, 'store']); // Rota para cadastrar
-
-Route::get ('/modalidades/ListarModalidades', [ModalidadeController::class, 'index']); // Rota para exibir
-Route::post('/modalidades/cadastrarModalidade', [ModalidadeController::class, 'store']); // Rota para cadastrar
+/*Controller das Reservas*/
+Route::get ('/reservas/enviarReservas', [ReservasController::class, 'index']); // Rota que manda os dados das reservas
+Route::post('/reservas/cadastrarReserva', [ReservasController::class, 'store']); // Rota para cadastrar uma reserva

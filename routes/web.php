@@ -92,12 +92,10 @@ Route::get('/modalidades/apagar/{idModalidade}', [App\Http\Controllers\controlle
 /////////////////////////////////////////////
 /*Rotas do controller da tabela de Reservas*/
 /////////////////////////////////////////////
-Route::get ('/reservas/listarReservas', [App\Http\Controllers\controllerReservas::class, 'index']) ->name('indexReserva'); // Rota para exibir as reservas
-Route::get ('/reservas/selecionadoReserva/{idReserva}', [App\Http\Controllers\controllerReservas::class, 'enviaReservaEscolhido']); // Rota que envia a reserva escolhida para ser vizualizado
-Route::get ('/reservas/listarSolicitacaoReserva', [App\Http\Controllers\controllerReservas::class, 'indexSolicitacao']) ->name('indexSolicitacao'); // Rota para exibir as solicitações
-Route::get ('/reservas/selecionadoSolicitacao/{idSolicitacaoReserva}', [App\Http\Controllers\controllerReservas::class, 'enviaSolicitacaoEscolhido']);// // Rota que envia a solicitação escolhida para ser vizualizado
-Route::get('/reservas/apagar/{idSolicitacaoReserva}', [App\Http\Controllers\controllerReservas::class, 'destroy']); // Rota que apaga uma solicitação de reserva
-Route::get('/reservas/cadastrarReserva/{idSolicitacaoReserva}', [App\Http\Controllers\controllerReservas::class, 'store']); // Quando a solicitação for aceita, a reserva será criada
+Route::get ('/reservas/listarReservas/{status}', [App\Http\Controllers\controllerReservas::class, 'index']); // Rota para exibir as reservas
+Route::get ('/reservas/reservaSelecionada/{idReserva}', [App\Http\Controllers\controllerReservas::class, 'enviaReservaEscolhida']); // Rota que envia a reserva escolhida para ser vizualizado
+Route::get('/reservas/apagar/{idoReserva}', [App\Http\Controllers\controllerReservas::class, 'destroy']); // Rota que apaga uma solicitação de reserva
+Route::get('/reservas/aceitarNegar/{idReserva}/{status}', [App\Http\Controllers\controllerReservas::class, 'aceitarNegarReserva']); // Rota que apaga uma solicitação de reserva
 
 ////////////////////////////////////////////////
 /*Rotas do controller da tabela de Times*/
